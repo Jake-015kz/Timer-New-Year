@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Таймер до Нового года</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div id="background"></div>
+  <div id="timer">
+    <!-- Дни -->
+    <div id="days-container">
+      <span id="days">00</span>
+      <span id="days-label">дней</span>
+    </div>
+    <!-- Часы, минуты, секунды -->
+    <div id="time-container">
+      <div class="time-unit">
+        <span id="hours">00</span>
+        <span class="label">часов</span>
+      </div>
+      <div class="time-unit">
+        <span id="minutes">00</span>
+        <span class="label">минут</span>
+      </div>
+      <div class="time-unit">
+        <span id="seconds">00</span>
+        <span class="label">секунд</span>
+      </div>
+    </div>
+  </div>
+  <div id="controls">
+    <button id="music-toggle">🎵 Включить музыку</button>
+    <button id="change-background">🌄 Сменить фон</button>
+  </div>
+  <audio id="season-music" loop></audio>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
